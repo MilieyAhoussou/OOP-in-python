@@ -105,6 +105,8 @@ class Zoo():
             enclosure_number = int(input(">"))
             if enclosure_number > number:
                 print("Number not correct")
+            elif Enclosure_list[enclosure_number-1].quantity <= 0 :
+                print("This enclosure is full")
             else :
                 enclosure = Enclosure_list[enclosure_number-1]
                 add_animal(enclosure)
